@@ -1,0 +1,18 @@
+<h3>Editar Funcionário</h3>
+
+<form method="post">
+<label for="nome" class="form-label">Nome do Funcionario:</label>
+  <input type="text" name="nome" class="form-control" id="nome" value="<?php echo $this->f->getNome(); ?>" required>
+  <br>
+  <label for="cpf" class="form-label">CPF:</label>
+  <input type="text" name="cpf" class="form-control" id="cpf" value="<?php echo $this->f->getCpf(); ?>" required>
+  <br>
+  <label for="salario" class="form-label">Salário:</label>
+  <input type="text" name="salario" class="form-control" id="salario" value="<?php echo $this->f->getSalario(); ?>" required>
+<br>
+<button type="submit" class="btn btn-primary">Editar</button>
+
+</form>
+<br><br>
+<a href="<?php echo $this->url('application/default',
+        array('controller' => 'index', 'action' => 'listar')); ?>">Listar Funcionario</a>

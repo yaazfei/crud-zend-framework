@@ -1,0 +1,26 @@
+
+<br>
+<h3>Adicionar Funcionário</h3>
+
+<form method="post">
+<br>
+<div class="mb-3">
+  <label for="nome" class="form-label">Nome do Funcionario:</label>
+  <input type="text" name="nome" class="form-control" id="nome" placeholder="João da Silva" required>
+  <br>
+  <label for="cpf" class="form-label">CPF:</label>
+  <input type="text" name="cpf" class="form-control" id="cpf" placeholder="15634968712" required>
+  <br>
+  <label for="salario" class="form-label">Salário:</label>
+  <input type="text" name="salario" class="form-control" id="salario" placeholder="6000" required>
+<br>
+<button type="submit" class="btn btn-primary">Adicionar</button>
+<a class="btn btn-secondary" href="<?php echo $this->url('application/default',
+        array('controller' => 'index', 'action' => 'listar')); ?>" role="button">Listar Funcionários</a>
+</div>
+
+</form>
+<br><br>
+
+<br>
+<?php echo $this->resp; ?>
